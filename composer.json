@@ -1,0 +1,48 @@
+{
+  "name": "erdaldemirci/laravel-ininal",
+  "type": "library",
+  "description": "Laravel plugin For Processing Payments Through Ininal Checkout.",
+  "keywords": ["http", "rest", "web service", "ininal", "laravel ininal"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Erdal Demirci",
+      "email": "erdemirr@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ErdalDemirci\\Ininal\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ErdalDemirci\\Ininal\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.2|^8.0",
+    "guzzlehttp/guzzle": "~7.0",
+    "illuminate/support": "~6.0|~7.0|~8.0|~9.0",
+    "nesbot/carbon": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0",
+    "symfony/var-dumper": "~5.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ErdalDemirci\\Ininal\\Providers\\IninalServiceProvider"
+      ],
+      "aliases": {
+        "Ininal": "ErdalDemirci\\Ininal\\Facades\\Ininal"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
