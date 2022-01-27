@@ -1,7 +1,7 @@
 {
   "name": "erdaldemirci/laravel-ininal",
   "type": "library",
-  "description": "Laravel plugin For Processing Payments Through Ininal Checkout.",
+  "description": "Laravel plugin for Ininal.",
   "keywords": ["http", "rest", "web service", "ininal", "laravel ininal"],
   "license": "MIT",
   "authors": [
